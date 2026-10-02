@@ -182,22 +182,23 @@ It includes the wrong turns: two results first reported from a single seed and
 later corrected, an in-domain score that turned out to be optimistic, and two
 ideas proposed as new that the literature already had.
 
-An AI coding assistant (Claude Code) wrote all of the code and is listed as
-co-author on the commits; I did not write code. It also proposed the two
-datasets and most of the experiments, and it set up the evaluation protocol
-(cross-fitting, the random-split controls, the metrics) on its own.
+This was built with an AI coding assistant (Claude Code), and the division of
+work was as follows.
 
-My part was the direction. Nothing ran without my go-ahead, and at each step
-I decided what to ask next: more model families, an easier dataset, a
-separate repository, checks against the literature, verification of every
-citation. Some of the ideas were mine outright: building something aimed at
-this field in the first place, fine-tuning the tabular foundation model, the
-staged processing that made one memory-bound run possible, and the question
-that led to the disagreement signal — not "is there drift?" but "is it strong
-enough to break the model?"
+My part was the direction. I chose the field and the question, and at each
+step decided what to ask next: more model families when one model failed, an
+easier dataset when SECOM could not support a finer question, a separate
+repository, checks against the literature, verification of every citation.
+Some of the ideas were mine outright: taking the companion study to
+manufacturing sensor data in the first place, fine-tuning the tabular
+foundation model, the staged processing that made one memory-bound run
+possible, and the question that led to the disagreement signal — not "is
+there drift?" but "is it strong enough to break the model?"
 
-It was built in the days before a job application, as an extension of the
-companion repository to the field the position is in.
+The assistant wrote all of the code and is listed as co-author on the
+commits; I did not write code. It also proposed the two datasets and most of
+the experiments, and it set up the evaluation protocol (cross-fitting, the
+random-split controls, the metrics) on its own.
 
 ---
 
