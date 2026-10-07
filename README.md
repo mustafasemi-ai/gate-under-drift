@@ -57,7 +57,10 @@ its later error (rank correlation +0.20, not significant; between −0.12 and
 Accuracy is the mean over runs, error among released the median. In batches 6, 7 and 9
 the model has lost a third of its accuracy and the gate still keeps its
 promise in 47 runs of 50, by releasing fewer items. In batches 4, 8 and 10 it
-fails in every run. Some failures come from the data, some from the run.
+fails in nearly every run. Some failures come from the data, some from the run.
+
+Batch 8 counts 24 runs, not 50: the other 26 released fewer than 30 items,
+too few to estimate an error rate.
 
 ### 3. The usual label-free alarms cannot see it. Disagreement can.
 
@@ -196,9 +199,9 @@ possible, and the question that led to the disagreement signal — not "is
 there drift?" but "is it strong enough to break the model?"
 
 The assistant wrote all of the code and is listed as co-author on the
-commits; I did not write code. It also proposed the two datasets and most of
-the experiments, and it set up the evaluation protocol (cross-fitting, the
-random-split controls, the metrics) on its own.
+commits. It also proposed the two datasets and most of the experiments, and
+it set up the evaluation protocol (cross-fitting, the random-split controls,
+the metrics) on its own.
 
 ---
 
